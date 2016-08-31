@@ -25,7 +25,9 @@
 ##### 1.1.2资源文件  
 ![资源文件](http://7xp6ld.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720160831110339.png)  
 **进展：**进度条  
-**分频器：**listview的分割线
+**分频器：**listview的分割线  
+
+
 
 ### 2.代码指南
 
@@ -358,7 +360,7 @@
   	}
 
 	}
-当使用字段中的注释，你应该确保注释保持在同一条线上，而有房。例如：
+当使用字段中的注释，你应该确保注释保持在同一条线上，例如：
 
 	@Bind(R.id.layout_coordinator) CoordinatorLayout coordinatorLayout;
 
