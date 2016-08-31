@@ -1,5 +1,15 @@
 # Android 代码规范  
 --- 
+### 0.Yoosee杂项  
+* 字符串与翻译  
+
+    1.Yoosee 新增字符串 与之前工作方式一样 放在英文字符串之下  
+    2.不要私自添加字符串，全部需要在UI的管理文件里获取  
+    3.在没有翻译之前其他语言文件里面不要再添加相同的key  
+    4.对于后续添加的重复字符串，会在UI那里过滤，不出差错的话是不会增加重复字符串的  
+    5.翻译之后统一同步到其他语言文件里，注意不要打乱顺序[(已有自动化工具)]()  
+* 使用对象包装数据时只能对外提供获取成员变量的方法，而不能讲其完全暴露在外面
+* 
 ### 1.命名  
 
 #### 1.1文件命名  
@@ -13,7 +23,7 @@
 	UserFragment, SignUpActivity, RateAppDialog, PushNotificationServer, NumberView  
 
 ##### 1.1.2资源文件  
-![](http://7xp6ld.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720160831110339.png)  
+![资源文件](http://7xp6ld.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720160831110339.png)  
 **进展：**进度条  
 **分频器：**listview的分割线
 
@@ -395,8 +405,8 @@
 
 1. 枚举
 2. 常量
-3. 匕首领域注入
-4. 奶油刀查看绑定
+3. Dagger Injected注入
+4. Butterknife视图绑定
 5. 私人全局变量
 6. 公共全局变量  
 
@@ -858,9 +868,9 @@ DraftsActivity	DraftsActivityTest
 	onView(withId(R.id.text_title))
         	.perform(scrollTo())
         	.check(matches(isDisplayed()))
-这种风格不仅链接调用帮助我们坚持每行少于100个字符，但它也可以很容易地读取发生在咖啡测试事件链。
+这种风格不仅链接调用帮助我们保持每行少于100个字符，但它也可以很容易地读取发生在java测试事件链。
 
-### 3.Grandle
+### 3.Gradle
 
 #### 3.1依赖
 
