@@ -8,8 +8,8 @@
     3.在没有翻译之前其他语言文件里面不要再添加相同的key  
     4.对于后续添加的重复字符串，会在UI那里过滤，不出差错的话是不会增加重复字符串的  
     5.翻译之后统一同步到其他语言文件里，注意不要打乱顺序[(已有自动化工具)]()  
-* 使用对象包装数据时只能对外提供获取成员变量的方法，而不能讲其完全暴露在外面
-* 
+* 使用对象包装数据时只能对外提供获取成员变量的方法，而不能将其完全暴露在外面  
+
 ### 1.命名  
 
 #### 1.1文件命名  
@@ -522,7 +522,7 @@
 	private static final int VALUE_ONE = 1;
 	private static final int VALUE_TWO = 2;
 	private static final int VALUE_THREE = 3;
-##### 2.2.20参数在碎片和活动
+##### 2.2.20参数在Fragment和Activity
 
 当我们通过使用意图或捆绑数据，值必须使用约定的按键定义如下：
 
@@ -824,7 +824,7 @@
     	android:textColor="@color/bluish_gray" />
 **注：**此格式可以通过在Android Studio中的格式功能进行 -
 
-	cmd + shift + L
+	ctrl + shift + L
 
 这样做很容易通过XML属性，当谈到在更改布局文件进行浏览。
 
