@@ -9,12 +9,14 @@
     4.对于后续添加的重复字符串，会在UI那里过滤，不出差错的话是不会增加重复字符串的  
     5.翻译之后统一同步到其他语言文件里，注意不要打乱顺序[(已有自动化工具)]()  
 * 使用对象包装数据时只能对外提供获取成员变量的方法，而不能将其完全暴露在外面  
+* 建议在自定义Entity中重写```toString```方法，打印出关键信息  
+* 当一个类代码很多时(一般超过1000行)，成员变量的声明可以不再写在类顶，可写在新增的模块上方，同理接口的声明可不写在类前  
 
 ### 1.命名  
 
 #### 1.1文件命名  
 ##### 1.1.1类文件  
-定义应该使用UpperCamelCase来命名，例如任何类：  
+定义应该使用[UpperCamelCase][2]来命名，例如任何类：  
 
 	AndroidActivity, NetworkHelper, UserFragment, PerActivity  
 
@@ -713,7 +715,7 @@
 
 ###### 2.2.24.3 RxJava链接
 
-当链接接收业务，各操作符应该是一个新行，打破了行前一段.。例如：
+当链接接收业务，各操作符应该是一个新行,例如：
 
 	return dataManager.getPost()
             	.concatMap(new Func1<Post, Observable<? extends Post>>() {
@@ -926,4 +928,5 @@ DraftsActivity	DraftsActivityTest
 	testCompile 'org.robolectric:robolectric:3.0'  
 
 ----
-[1]:http://baike.baidu.com/link?url=o1siDxcmodTwabRQ55DhZb5MMZ7Q3_iRCQpH_4_E_sp-FqrxSW18onfUt2UrgQFmhzEyk-KnQYfZpGT94UCwvK
+[1]:http://baike.baidu.com/link?url=o1siDxcmodTwabRQ55DhZb5MMZ7Q3_iRCQpH_4_E_sp-FqrxSW18onfUt2UrgQFmhzEyk-KnQYfZpGT94UCwvK  
+[2]:http://baike.baidu.com/view/1165629.htm?fromtitle=%E9%A9%BC%E5%B3%B0%E5%91%BD%E5%90%8D%E6%B3%95&fromid=7560610&type=syn
