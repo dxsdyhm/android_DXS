@@ -291,7 +291,7 @@
         	}
     	}
 	}
-不仅是不是真的有必要的空间，多余的线，但它使块更容易阅读代码时要遵循的。
+使块更容易阅读。
 
 ###### 2.2.9.2如果内嵌子句
 
@@ -317,7 +317,7 @@
 	
     	}
 	}
-这使报表更易于阅读，并从嵌套子句中的不必要的额外行。
+这使代码更易于阅读，并减少嵌套子句中的不必要的额外行。
 
 ###### 2.2.9.4三元运算
 
@@ -333,7 +333,7 @@
 	} else {
     	userStatusImage = R.drawable.ic_cross;
 	}
-**注意**：有一些时候不应使用三元运算符。如果if从句逻辑是复杂或则应该使用大量字符的标准括号的风格。
+**注意**：有一些时候不应使用三元运算符。如果if从句逻辑是复杂或着使用大量字符的标准括号的风格。
 
 ##### 2.2.10注解
 
@@ -447,7 +447,7 @@
 1. 常量
 2. 字段
 3. 构造函数
-4. 覆盖方法和回调（公共或私营）
+4. 覆盖方法和回调（公共或私有）
 5. 公共方法
 6. 私有方法
 7. 内部类或接口  
@@ -569,7 +569,7 @@
 
 * 提取数据到一个局部变量
 * 提取逻辑到外部的方法
-* 行包代码分开的代码多行单行  
+* 换行  
 **注意**：对于代码中的注释和import语句不受100个字符的限制。
 
 ###### 2.2.21.1换行技巧
@@ -738,7 +738,7 @@
 
 ###### 2.2.25Butterknife
 
-###### 2.2.25.1事件侦听器（暂时不使用此注解，Android Studio新项目可使用）
+###### 2.2.25.1事件监听（暂时不使用此注解，Android Studio新项目可使用）
 
 如果可能的话，使用Butterknife监听绑定。例如，当一个click事件，而不是做这个听：
 
@@ -760,13 +760,13 @@
 做：
 
 	<ImageView
-    	android:id="@+id/image_user"
+    	android:id="@+id/iv_user"
     	android:layout_width="90dp"
     	android:layout_height="90dp" />
 别：
 
 	<ImageView
-    	android:id="@+id/image_user"
+    	android:id="@+id/iv_user"
     	android:layout_width="90dp"
     	android:layout_height="90dp">
 	</ImageView>
@@ -899,7 +899,7 @@ DraftsActivity	DraftsActivityTest
 
 ##### 3.1.2分组
 
-> 在适用时，相关性应该由包名进行分组，与该组之间在空间中。例如：
+> 在适用时，相关性应该由包名进行分组，与组之间留一个空行。例如：
 
 	compile "com.android.support:percent:$SUPPORT_LIBRARY_VERSION"
 	compile "com.android.support:customtabs:$SUPPORT_LIBRARY_VERSION"
